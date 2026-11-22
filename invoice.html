@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فاکتور طلا – پور گلد (مالیات ۲٪ روی کل)</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--page:#e9dfc4;--ink:#2a2108;--brown:#6f5116;--panel:#9d7c36;--gold:#c8961f;--bar:#fff8e4;--barink:#3a2a08;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#17130a;--bar:#2a2210;--barink:#f3e3b0}}
+:root[data-theme="dark"]{--page:#17130a;--bar:#2a2210;--barink:#f3e3b0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;padding:14px;background:var(--page);font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--ink)}
+.bar{max-width:900px;margin:0 auto 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bar);color:var(--barink);padding:8px 12px;border-radius:10px;font-size:13px}
+.bar button,.bar select{font:inherit;border:1px solid #b8892b;background:#fff;color:#2a2108;border-radius:8px;padding:6px 12px;cursor:pointer}
+.bar button.main{background:var(--brown);color:#f7e6b0;border-color:var(--brown);font-weight:700}
+.bar .sp{flex:1}
+.sheet{position:relative;overflow:hidden;max-width:900px;margin:0 auto;border-radius:10px;padding:22px 6% 20px;
+ background:radial-gradient(circle at 28% 12%,#fdf4d2 0,#ecd698 45%,#d2b162 100%);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.gem{position:absolute;width:54px;height:54px;background:linear-gradient(135deg,#fff,#cfd6dc 50%,#8f9aa4);
+ clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%)}
+.orn{position:absolute;top:44%;width:120px;height:120px;border-radius:50%;
+ background:radial-gradient(circle,#7d1020 0 14%,#f3d77a 15% 22%,#b8892b 23% 30%,transparent 31%),repeating-conic-gradient(#d9a93a 0 14deg,#8a5f12 14deg 18deg,transparent 18deg 45deg);
+ -webkit-mask:radial-gradient(circle,#000 0 68%,transparent 70%);mask:radial-gradient(circle,#000 0 68%,transparent 70%)}
+.head{position:relative;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.brand{text-align:center;flex:1 1 200px;min-width:0}
+.brand .t1{font-size:22px;font-weight:700;color:#111}
+.brand .t2{font-size:clamp(44px,9vw,68px);font-weight:900;line-height:1.1;color:var(--gold);text-shadow:1px 1px 0 #fff3b8,-1px -1px 0 #7a5612,2px 3px 4px rgba(90,60,5,.4)}
+.brand .t3{font-size:11px;letter-spacing:5px;color:#5b6d8a;direction:ltr;font-style:italic}
+.info{flex:1 1 220px;max-width:250px;min-width:0;background:rgba(255,255,255,.6);border:1px solid #b8892b;border-radius:10px;padding:8px 12px;font-size:12px}
+.info label{display:flex;align-items:center;gap:6px;margin:3px 0;color:#6b4a0c;font-weight:700;white-space:nowrap}
+.info input{flex:1;min-width:0;border:0;border-bottom:1px dotted #3a2a08;background:transparent;font:inherit;color:var(--ink);text-align:center;padding:2px}
+.buyer{position:relative;display:flex;gap:10px;align-items:flex-end;margin:16px 0 14px;font-weight:700;font-size:14px;flex-wrap:wrap}
+.buyer label{display:flex;align-items:flex-end;gap:6px;flex:1 1 240px}
+.buyer input{flex:1;min-width:0;border:0;border-bottom:1px dotted #3a2a08;background:transparent;font:inherit;color:var(--ink);text-align:center;padding:2px}
+.panel{position:relative;background:var(--panel);border-radius:14px;padding:8px;box-shadow:0 3px 8px rgba(60,40,0,.4)}
+table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:3px;text-align:center}
+th{background:var(--brown);color:#f7e6b0;font-size:13px;padding:7px 2px;border-radius:5px}
+td{background:#fff;border-radius:4px;padding:0}
+td.no{background:var(--brown);color:#fff;font-size:12px;font-weight:700}
+.f{width:100%;border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;text-align:center;color:#2a2108;padding:9px 3px;outline:none;border-radius:4px}
+.f:focus{background:#fff6d0;box-shadow:inset 0 0 0 2px var(--brown)}
+.tot td{padding:7px 8px;font-size:12px;font-weight:700;color:#2a2108}
+.tot td.tag{background:var(--brown);color:#f7e6b0}
+.tot td.amt{font-size:16px}
+.note{text-align:center;font-size:11px;line-height:1.9;color:#2a1c02;margin-top:8px}
+.sig{display:flex;justify-content:space-between;padding:18px 4% 0;font-weight:700;font-size:14px}
+.add{display:block;margin:8px auto 0;font:inherit;font-size:12px;border:1px dashed #f7e6b0;background:transparent;color:#f7e6b0;border-radius:8px;padding:4px 14px;cursor:pointer}
+.calc{max-width:900px;margin:0 auto 12px;background:var(--bar);color:var(--barink);padding:10px 12px;border-radius:10px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.calc label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.calc input{width:64px;font:inherit;text-align:center;border:1px solid #b8892b;border-radius:6px;padding:4px;background:#fff;color:#2a2108}
+.calc .h{flex-basis:100%;font-weight:700}
+.calc .h small{font-weight:400;opacity:.85;margin-right:8px}
+.calc #wages,.calc #brk{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px}
+.c0{width:34px}.c1{width:38%}.c2{width:12%}.c3{width:15%}
+@media (max-width:640px){.gem,.orn{display:none}th{font-size:10.5px;padding:6px 1px}.f{font-size:11.5px;padding:8px 1px}.sheet{padding:16px 3%}.panel{padding:6px 4px}.c0{width:22px}.c1{width:27%}.c2{width:11%}.c3{width:14%}td.no{font-size:10px}
+ .tot,.tot tbody{display:block}.tot tr{display:flex;flex-wrap:wrap;gap:3px}.tot td{width:auto!important;flex:1 1 auto}.tot td:nth-child(1),.tot td:nth-child(2){flex-basis:100%}.tot td.tag{flex:0 0 60px}.tot td.amt{flex:1}}
+@media print{
+ @page{size:A5 landscape;margin:0}
+ body{background:#fff;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .bar,.add,.calc{display:none}.sheet{max-width:none;border-radius:0;box-shadow:none;zoom:.72;min-height:205mm;display:flex;flex-direction:column}.sig{margin-top:auto}
+ .f:focus{background:transparent;box-shadow:none}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+ <label>واحد پول: <select id="unit"><option>تومان</option><option>ریال</option></select></label>
+ <span class="sp"></span>
+ <button id="clear">پاک کردن فاکتور</button>
+ <button id="print" class="main">چاپ / ذخیره PDF</button>
+</div>
+
+<div class="calc">
+ <div class="h">محاسبه‌ی خودکار قیمت <small>این بخش در فاکتور چاپی نمی‌آید؛ فقط مبلغ نهایی هر ردیف و جمع کل چاپ می‌شود.</small></div>
+ <label>اجرت ساخت (٪ از ارزش طلا) <input id="wage" inputmode="decimal" data-pd placeholder="۰"></label>
+ <label>سود فروشنده (٪ از طلا + اجرت) <input id="profit" inputmode="decimal" data-pd value="۷"></label>
+ <label>مالیات (٪ از طلا + اجرت + سود) <input id="tax" inputmode="decimal" data-pd value="۲"></label>
+ <div id="wages"></div>
+ <div id="brk"></div>
+</div>
+
+<div class="sheet" id="sheet">
+ <i class="gem" style="top:8px;left:8px;transform:rotate(-18deg);width:62px;height:62px"></i>
+ <i class="gem" style="top:150px;right:10px;width:30px;height:30px"></i>
+ <i class="gem" style="bottom:12px;right:-8px;width:80px;height:80px;transform:rotate(10deg)"></i>
+ <i class="orn" style="left:-62px"></i><i class="orn" style="right:-62px"></i>
+
+ <div class="head">
+  <div class="brand"><div class="t1">طلا و جواهر</div><div class="t2">پور گلد</div><div class="t3">POUR GOLD JEWELLERY</div></div>
+  <div class="info">
+   <label>شماره فاکتور: <input id="no" inputmode="numeric" data-pd></label>
+   <label>تاریخ: <input id="date" data-pd></label>
+   <label><span>قیمت هر گرم طلا (<span class="u">تومان</span>):</span> <input id="gram" inputmode="numeric" data-money></label>
+  </div>
+ </div>
+
+ <div class="buyer">
+  <label>خریدار: خانم / آقا <input id="buyer"></label>
+  <label>شماره تماس: <input id="phone" inputmode="tel" data-pd></label>
+ </div>
+
+ <div class="panel">
+  <table>
+   <colgroup><col class="c0"><col class="c1"><col class="c2"><col class="c3"><col></colgroup>
+   <thead><tr><th></th><th>نوع جنس</th><th>عیار</th><th>وزن (گرم)</th><th>قیمت کل (<span class="u">تومان</span>)</th></tr></thead>
+   <tbody id="rows"></tbody>
+  </table>
+  <button class="add" id="add">+ افزودن ردیف</button>
+  <table class="tot" style="margin-top:4px"><tr>
+   <td style="width:118px">جمع کل به حروف:</td><td id="words"></td>
+   <td class="tag" style="width:64px">جمع کل</td><td class="amt" id="sum" style="width:23%"></td>
+  </tr></table>
+  <div class="note"><b>مشتری گرامی:</b><br>همراه داشتن فاکتور در هنگام تعویض و یا فروش الزامی است.<br>جنس فروخته شده در هنگام تعویض و یا فروش، اجرت آن کسر و طلا به نرخ روز خریداری می‌گردد.</div>
+ </div>
+ <div class="sig"><span>امضاء خریدار</span><span>مهر و امضاء فروشنده</span></div>
+</div>
+
+<script>
+const D='۰۱۲۳۴۵۶۷۸۹';
+const pd=s=>String(s).replace(/[0-9]/g,d=>D[d]);
+const num=s=>parseFloat(String(s).replace(/[۰-۹]/g,d=>D.indexOf(d)).replace(/[٠-٩]/g,d=>d.charCodeAt(0)-1632).replace(/٫/g,'.').replace(/[٬،,\s]/g,''))||0;
+const money=s=>{const n=num(String(s).replace(/[.\/]/g,''));return n?pd(Math.round(n).toLocaleString('en-US')).replace(/,/g,'٬'):''};
+const ONES=['','یک','دو','سه','چهار','پنج','شش','هفت','هشت','نه','ده','یازده','دوازده','سیزده','چهارده','پانزده','شانزده','هفده','هجده','نوزده'];
+const TENS=['','','بیست','سی','چهل','پنجاه','شصت','هفتاد','هشتاد','نود'];
+const HUND=['','صد','دویست','سیصد','چهارصد','پانصد','ششصد','هفتصد','هشتصد','نهصد'];
+const GRP=['','هزار','میلیون','میلیارد','هزار میلیارد'];
+function three(n){const p=[];if(n>=100){p.push(HUND[Math.floor(n/100)]);n%=100}
+ if(n>=20){p.push(TENS[Math.floor(n/10)]);n%=10;if(n)p.push(ONES[n])}else if(n)p.push(ONES[n]);return p.join(' و ')}
+function words(n){n=Math.round(n);if(!n)return '';const o=[];let i=0;
+ while(n>0){const r=n%1000;n=Math.floor(n/1000);if(r)o.push(three(r)+(GRP[i]?' '+GRP[i]:''));i++}return o.reverse().join(' و ')}
+
+const $=id=>document.getElementById(id), rows=$('rows'), wages=$('wages');
+function addRow(){
+ const i=rows.children.length+1, tr=document.createElement('tr');
+ tr.innerHTML=`<td class="no">${pd(i)}</td><td><input class="f" data-k="t"></td><td><input class="f" data-k="a" inputmode="numeric" data-pd></td>`+
+ `<td><input class="f" data-k="w" inputmode="decimal" data-pd></td><td><input class="f" data-k="p" inputmode="numeric" data-money></td>`;
+ rows.appendChild(tr);
+ wages.insertAdjacentHTML('beforeend',`<label>اجرت ردیف ${pd(i)} <input inputmode="decimal" data-pd placeholder="پیش‌فرض"></label>`);
+}
+for(let i=0;i<5;i++)addRow();
+
+function calc(){
+ const g=num($('gram').value.replace(/[.\/]/g,''));let sum=0;
+ const dw=num($('wage').value),pp=num($('profit').value),tp=num($('tax').value);
+ const B={gold:0,wage:0,profit:0,tax:0};
+ [...rows.children].forEach((tr,i)=>{
+  const w=num(tr.querySelector('[data-k=w]').value),p=tr.querySelector('[data-k=p]');
+  if(!tr.dataset.m){
+   if(g&&w){
+    const wi=wages.children[i]?wages.children[i].querySelector('input').value:'';
+    const wp=wi?num(wi):dw,gold=g*w,wg=gold*wp/100,pr=(gold+wg)*pp/100,tx=(gold+wg+pr)*tp/100;
+    B.gold+=gold;B.wage+=wg;B.profit+=pr;B.tax+=tx;p.value=money(gold+wg+pr+tx);
+   }else p.value='';
+  }
+  sum+=num(p.value.replace(/[.\/]/g,''));
+ });
+ $('brk').innerHTML=B.gold?`<span>ارزش طلا: <b>${money(B.gold)}</b></span><span>اجرت: <b>${money(B.wage)||'۰'}</b></span><span>سود فروشنده: <b>${money(B.profit)||'۰'}</b></span><span>مالیات: <b>${money(B.tax)||'۰'}</b></span>`:'';
+ const u=$('unit').value;
+ $('sum').textContent=sum?money(sum):'';
+ $('words').textContent=sum?words(sum)+' '+u:'';
+ document.querySelectorAll('.u').forEach(e=>e.textContent=u);
+}
+document.addEventListener('input',e=>{
+ const t=e.target;if(!t.matches('input'))return;
+ if(t.hasAttribute('data-pd')||t.hasAttribute('data-money')){let v=pd(t.value);if(t.getAttribute('inputmode')==='decimal')v=v.replace(/\./g,'٫');if(v!==t.value)t.value=v}
+ if(t.dataset.k==='p'){const tr=t.closest('tr');t.value?tr.dataset.m=1:delete tr.dataset.m}
+ calc();
+});
+document.addEventListener('focusout',e=>{
+ const t=e.target;if(t.matches&&t.matches('[data-money]')){t.value=money(t.value)||t.value;calc()}
+});
+$('unit').onchange=calc;
+$('add').onclick=()=>{if(rows.children.length<15)addRow()};
+$('clear').onclick=()=>{
+ document.querySelectorAll('.sheet input').forEach(i=>{if(i.id!=='date')i.value=''});
+ rows.innerHTML='';wages.innerHTML='';for(let i=0;i<5;i++)addRow();calc();
+};
+$('print').onclick=()=>{try{window.print()}catch(e){alert('برای چاپ از کلید Ctrl+P استفاده کنید.')}};
+try{$('date').value=new Intl.DateTimeFormat('fa-IR-u-ca-persian-nu-arabext',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}catch(e){}
+calc();
+</script>
+</body>
+</html>
